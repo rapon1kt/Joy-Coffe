@@ -1,9 +1,10 @@
 import { Navbar, ProductsCarousel } from "../../components";
 import React from "react";
+import "./home.css";
 
 const Home: React.FC = () => {
   return (
-    <div className="Home-container">
+    <div className="home-container">
       <Navbar />
       <ProductsCarousel />
     </div>
