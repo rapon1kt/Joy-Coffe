@@ -1,9 +1,17 @@
 .navbar-container {
+  display: flex;
+  align-items: bottom;
+  justify-content: center;
   text-align: center;
   width: 100%;
-  padding: 1rem;
+  gap: 1rem;
+  padding: 1.5rem;
+  font-size: xx-large;
+  color: #545454;
+  background-color: #dfdfdf;
 }
 
 h2 {
   font-weight: 400;
+  font-size: xx-large;
 }
