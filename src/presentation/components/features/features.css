@@ -1,0 +1,19 @@
+.features-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: #545454;
+  height: 60vh;
+  width: 100%;
+}
+
+.features-container .feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: large;
+  width: 20%;
+  gap: 0.3rem;
+}
