@@ -4,6 +4,9 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-color: #545454;
+  padding: 2rem;
+  color: #dcccc0;
 }
 
 .carousel-container {
@@ -11,4 +14,36 @@
   justify-content: space-around;
   display: flex;
   align-items: center;
+  text-align: center;
+}
+
+.carousel-container button {
+  font-size: xx-large;
+  border: none;
+  background-color: #545454;
+  cursor: pointer;
+  color: #dcccc0;
+}
+
+.carousel-container .carousel-product .carousel-product-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-container .carousel-product img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  border: #dcccc0 2px solid;
+}
+
+.carousel-container .carousel-product h2 {
+  font-weight: 600;
+}
+
+.carousel-container .carousel-product h3 {
+  font-weight: 400;
+  max-width: 50rem;
 }

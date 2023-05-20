@@ -32,15 +32,15 @@ const ProductsCarousel: React.FC = () => {
   return (
     <div className="carousel-products">
       <div className="carousel-container">
-        <button onClick={() => previousProduct()}>Anterior</button>
+        <button onClick={() => previousProduct()}>{`<`}</button>
         <div className="carousel-product">
           <img src={product?.src} alt="produto" />
           <div className="carousel-product-text">
-            <h3>{product?.name}</h3>
-            <h2>{product?.description}</h2>
+            <h2>{product?.name}</h2>
+            <h3>{product?.description}</h3>
           </div>
         </div>
-        <button onClick={() => nextProduct()}>Próximo</button>
+        <button onClick={() => nextProduct()}>{`>`}</button>
       </div>
     </div>
   );
