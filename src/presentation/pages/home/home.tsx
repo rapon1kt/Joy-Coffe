@@ -1,4 +1,10 @@
-import { Navbar, ProductsCarousel, Features, Card } from "../../components";
+import {
+  Navbar,
+  ProductsCarousel,
+  Features,
+  Card,
+  Location,
+} from "../../components";
 import React from "react";
 import "./home.css";
 
@@ -9,6 +15,7 @@ const Home: React.FC = () => {
       <ProductsCarousel />
       <Features />
       <Card />
+      <Location />
     </div>
   );
 };
