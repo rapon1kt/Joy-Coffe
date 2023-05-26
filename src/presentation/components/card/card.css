@@ -33,7 +33,7 @@
   background-color: #dfdfdf;
   border-radius: 8px;
   text-align: center;
-  box-shadow: black 1rem 1rem;
+  box-shadow: black 0.2rem 0.2rem 1rem;
 }
 
 .product-container h3 {
