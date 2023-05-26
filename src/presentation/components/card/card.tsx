@@ -5,7 +5,9 @@ import products from "../../../data";
 const Card: React.FC = () => {
   return (
     <section className="cards">
-      <h1>Nossos Produtos</h1>
+      <h1>
+        <i className="fa-solid fa-store"></i> Nossos Produtos
+      </h1>
       <div className="card-container">
         {products.map((product) => (
           <div className="product-container">
