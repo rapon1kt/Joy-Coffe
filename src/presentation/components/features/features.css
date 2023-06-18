@@ -1,6 +1,7 @@
 .features-container {
   color: #545454;
   text-align: center;
+  width: 100%;
   padding: 1rem;
   margin: 1rem;
 }
@@ -23,4 +24,30 @@
   font-size: large;
   width: 20%;
   gap: 0.3rem;
+}
+
+@media screen and (max-width: 634px) {
+  .features-container {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .features {
+    width: 100%;
+    height: 40vh;
+    gap: 1rem;
+  }
+
+  .features .feature {
+    width: 33%;
+    font-size: 14px;
+  }
+
+  .feature h3 {
+    font-size: 16px;
+  }
+
+  .feature p {
+    font-size: 14px;
+  }
 }

@@ -4,7 +4,9 @@ import "./features.css";
 const Features: React.FC = () => {
   return (
     <div className="features-container">
-      <h1>Nossas vantagens!</h1>
+      <h1>
+        <i className="fa-solid fa-star"></i> Nossas vantagens!
+      </h1>
       <div className="features">
         <div className="feature">
           <i className="icon fa-solid fa-circle-check fa-4x"></i>
