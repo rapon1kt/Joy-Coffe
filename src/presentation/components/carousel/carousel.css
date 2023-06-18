@@ -23,6 +23,8 @@
   background-color: #545454;
   cursor: pointer;
   color: #dcccc0;
+  font-size: 4rem;
+  margin-bottom: 5.5rem;
 }
 
 .carousel-container .carousel-product .carousel-product-text {
@@ -46,4 +48,23 @@
 .carousel-container .carousel-product h3 {
   font-weight: 400;
   max-width: 50rem;
+}
+
+@media screen and (max-width: 634px) {
+  .carousel-container button {
+    font-size: 2rem;
+  }
+
+  .carousel-container .carousel-product img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .carousel-container .carousel-product h2 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-container .carousel-product .carousel-product-text {
+    font-size: 12px;
+  }
 }
