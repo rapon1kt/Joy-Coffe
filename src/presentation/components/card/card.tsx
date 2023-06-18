@@ -13,7 +13,7 @@ const Card: React.FC = () => {
           <div className="product-container" key={product.name + " key"}>
             <img src={product.src} alt={product.name} />
             <h3 className="product-name">{product.name}</h3>
-            <h4 className="product-price">R$ {product.price},00</h4>
+            <h4 className="product-price">{product.price}</h4>
             <p className="product-description">{product.description}</p>
           </div>
         ))}
