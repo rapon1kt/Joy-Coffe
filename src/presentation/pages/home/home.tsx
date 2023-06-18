@@ -4,7 +4,8 @@ import {
   Features,
   Card,
   Location,
-  Creators,
+  Team,
+  Footer,
 } from "../../components";
 import React from "react";
 import "./home.css";
@@ -17,7 +18,8 @@ const Home: React.FC = () => {
       <Features />
       <Card />
       <Location />
-      <Creators />
+      <Team />
+      <Footer />
     </div>
   );
 };
