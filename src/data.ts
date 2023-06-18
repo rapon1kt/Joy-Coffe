@@ -22,4 +22,49 @@ const products = [
   },
 ];
 
-export default products;
+const data = [
+  {
+    name: "Gustavo Raponi",
+    role: "Programador",
+    image: "assets/creators/raponi.jpg",
+    instagram: "raponi_13",
+    age: 16,
+  },
+  {
+    name: "Anelize",
+    role: "Fundadora",
+    image: "assets/creators/anelize.jpg",
+    instagram: "lize_fernandes",
+    age: 17,
+  },
+  {
+    name: "Ana Clara",
+    role: "Co-Fundadora",
+    image: "assets/creators/ana.jpg",
+    instagram: "_ana__souzaa",
+    age: 16,
+  },
+  {
+    name: "Pátricia D.",
+    role: "Designer",
+    image: "assets/creators/paty.jpg",
+    instagram: "patym.oon",
+    age: 16,
+  },
+  {
+    name: "Letícia Oliveira",
+    role: "Designer",
+    image: "assets/creators/leticia.jpg",
+    instagram: "le.oalmeida",
+    age: 16,
+  },
+  {
+    name: "Ingrid Tenório",
+    role: "Investidora",
+    image: "assets/creators/ingrid.jpg",
+    instagram: "iingridtenorio",
+    age: 16,
+  },
+];
+
+export { products, data };
