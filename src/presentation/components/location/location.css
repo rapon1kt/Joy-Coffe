@@ -1,37 +1,21 @@
 .location-container {
   background-color: #dfdfdf;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  text-align: center;
   width: 100%;
   padding: 3rem;
-  text-align: end;
-  height: 100vh;
-}
-
-.location-container .location-images .images {
-  display: flex;
-  gap: 1rem;
-}
-
-.location-container .location-images .images img {
-  width: 350px;
-  height: 500px;
-  border: #545454 5px solid;
-}
-
-.location-container .location-images .images-text {
-  text-align: start;
-  font-size: 1.2rem;
 }
 
 .location-container .location-description {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  text-align: start;
-  gap: 1rem;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .location-container .location-description .location-title {
@@ -46,34 +30,123 @@
   font-size: 1.2rem;
 }
 
-.location-container .location-description .location-buttons {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
+.location-container .location-images {
+  margin-bottom: 1rem;
 }
 
-.location-container .location-description .location-buttons button {
+.location-container .location-images .images {
+  display: flex;
+  gap: 2rem;
+}
+
+.location-container .location-images .images img {
+  width: 450px;
+  height: 450px;
+  border: #545454 2px solid;
+  border-radius: 5%;
+}
+
+.location-container .location-images .images-text {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #d49561;
+}
+
+.location-container .location-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.location-container .location-buttons button {
   background-color: #d8ae8e;
   border: #d8a278 solid 1px;
   border-radius: 16px;
-  width: 18rem;
-  padding: 1rem;
+  width: 24rem;
+  height: 3rem;
   cursor: pointer;
   font-weight: 400;
   font-size: 1.5rem;
   color: white;
 }
 
-.location-container .location-description .location-buttons button a {
+.location-container .location-buttons button a {
   text-decoration: none;
   color: white;
-  width: 100%;
 }
 
 /*rgb(68, 95, 247), rgb(18, 53, 250)*/
 
-.location-container .location-description .location-buttons button:hover {
+.location-container .location-buttons button:hover {
   background-color: #d49561;
   transition: all ease-in 200ms;
+}
+
+.location-container .carousel-location-container {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .location-container .location-images .images img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .location-container .location-images {
+    display: none;
+  }
+
+  .location-container .carousel-location-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 2rem;
+  }
+
+  .location-container .carousel-location-container button {
+    font-size: xx-large;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #545454;
+    font-size: 4rem;
+  }
+
+  .location-container .carousel-location-container img {
+    width: 450px;
+    height: 450px;
+    border: #545454 2px solid;
+    border-radius: 5%;
+  }
+
+  .location-container .location-buttons {
+    gap: 1rem;
+    width: 35rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .location-container .carousel-location-container {
+    gap: 1.5rem;
+  }
+
+  .location-container .carousel-location-container img {
+    width: 300px;
+    height: 300px;
+    border: #545454 2px solid;
+    border-radius: 5%;
+  }
+
+  .location-container .location-buttons {
+    gap: 1rem;
+    width: 20rem;
+  }
+
+  .location-container .location-buttons button a {
+    font-size: 16px;
+  }
 }
