@@ -1,0 +1,89 @@
+.team-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  background-color: #545454;
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+.team-container .team-title {
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #dcccc0;
+}
+
+.team-container .team-persons {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.team-container .team-persons .person {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+}
+
+.team-container .team-persons .person .person-images {
+  width: 200px;
+  border-radius: 50%;
+  border: white 2px solid;
+}
+
+.team-container .team-persons .person:hover .person-images {
+  position: absolute;
+  bottom: 44px;
+  left: auto;
+  right: auto;
+  transition: 0.2s ease;
+  backface-visibility: hidden;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.team-container .team-persons .person .person-insta {
+  display: none;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 0.2s ease;
+  border: #d8ae8e 2px solid;
+  cursor: pointer;
+  transition: ease 0.2s;
+}
+
+.team-container .team-persons .person .person-insta .person-nick {
+  color: #cf986e;
+}
+
+.team-container .team-persons .person:hover .person-insta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-container .team-persons .person .person-description {
+  color: #dcccc0;
+}
+
+.team-container .team-description .team-description-title {
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #dcccc0;
+}
+
+.team-container .team-description .team-description-text {
+  text-align: start;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #fde9db;
+}
