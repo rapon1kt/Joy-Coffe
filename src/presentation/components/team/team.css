@@ -1,89 +1,174 @@
 .team-container {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  background-color: #545454;
-  text-align: center;
-  padding: 2rem;
-  width: 100%;
+	display: flex;
+	flex-direction: column-reverse;
+	background-color: #545454;
+	text-align: center;
+	padding: 2rem;
+	width: 100%;
+}
+
+.team-container .team {
+	background-color: white;
+	padding: 1rem;
+	border-radius: 0px 0px 14px 14px;
+	width: 100%;
 }
 
 .team-container .team-title {
-  font-weight: 400;
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  color: #dcccc0;
+	font-weight: 600;
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	color: #545454;
 }
 
 .team-container .team-persons {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  gap: 1rem;
-  justify-content: center;
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
 }
 
 .team-container .team-persons .person {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 250px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .team-container .team-persons .person .person-images {
-  width: 200px;
-  border-radius: 50%;
-  border: white 2px solid;
+	width: 125px;
+	border-radius: 50%;
+	border: #545454 2px solid;
 }
 
 .team-container .team-persons .person:hover .person-images {
-  position: absolute;
-  bottom: 44px;
-  left: auto;
-  right: auto;
-  transition: 0.2s ease;
-  backface-visibility: hidden;
-  opacity: 0.3;
-  cursor: pointer;
+	position: absolute;
+	bottom: 22px;
+	left: auto;
+	right: auto;
+	transition: 0.2s ease;
+	backface-visibility: hidden;
+	opacity: 0.3;
+	cursor: pointer;
 }
 
 .team-container .team-persons .person .person-insta {
-  display: none;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  transition: 0.2s ease;
-  border: #d8ae8e 2px solid;
-  cursor: pointer;
-  transition: ease 0.2s;
+	display: none;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	transition: 0.2s ease;
+	border: #d8ae8e 2px solid;
+	cursor: pointer;
+	transition: ease 0.2s;
 }
 
 .team-container .team-persons .person .person-insta .person-nick {
-  color: #cf986e;
+	color: #cf986e;
+	font-size: 0.8rem;
 }
 
 .team-container .team-persons .person:hover .person-insta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .team-container .team-persons .person .person-description {
-  color: #dcccc0;
+	color: #545454;
+	font-size: 0.6rem;
+}
+
+.team-container .team-description {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	padding: 1rem;
+	border-radius: 14px 14px 0px 0px;
 }
 
 .team-container .team-description .team-description-title {
-  font-weight: 400;
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  color: #dcccc0;
+	font-weight: 600;
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	color: #545454;
 }
 
 .team-container .team-description .team-description-text {
-  text-align: start;
-  font-weight: 400;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  color: #fde9db;
+	font-weight: 400;
+	font-size: 1rem;
+	margin-bottom: 2rem;
+	color: #545454;
+	width: 60%;
+	font-size: 1.3rem;
+}
+
+@media screen and (max-width: 930px) {
+	.team-container .team-persons {
+		display: grid;
+		grid-template-columns: 33% 33% 33%;
+	}
+
+	.team-container .team-persons .person .person-images {
+		width: 200px;
+	}
+
+	.team-container .team-persons .person .person-insta {
+		width: 200px;
+		height: 200px;
+	}
+
+	.team-container .team-persons .person:hover .person-images {
+		bottom: 38px;
+	}
+
+	.team-container .team-persons .person .person-description {
+		font-size: 1rem;
+	}
+
+	.team-container .team-description .team-description-text {
+		width: 80%;
+		font-size: 1.2rem;
+	}
+}
+
+@media screen and (max-width: 810px) {
+	.team-container .team-persons .person .person-images {
+		width: 220px;
+	}
+
+	.team-container .team-persons .person .person-insta {
+		width: 220px;
+		height: 220px;
+	}
+
+	.team-container .team-persons {
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+
+	.team-container .team-description .team-description-text {
+		width: 90%;
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.team-container .team-description .team-description-text {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.team-container .team-persons .person .person-images {
+		width: 150px;
+	}
+
+	.team-container .team-persons .person .person-insta {
+		width: 150px;
+		height: 150px;
+	}
 }
