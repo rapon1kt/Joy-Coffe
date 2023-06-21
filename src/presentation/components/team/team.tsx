@@ -9,7 +9,7 @@ const Team: React.FC = () => {
 				<h1 className="team-title">
 					<i
 						className="fa-solid fa-people-group"
-						style={{ color: "#dcccc0" }}
+						style={{ color: "#545454" }}
 					></i>
 					Team
 				</h1>
@@ -27,7 +27,7 @@ const Team: React.FC = () => {
 							<div className="person-insta">
 								<i
 									className="fa-brands fa-instagram"
-									style={{ color: "#d8ae8e", fontSize: "4rem" }}
+									style={{ color: "#d8ae8e", fontSize: "2.2rem" }}
 								></i>
 								<h3 className="person-nick">@{person.instagram}</h3>
 							</div>
@@ -45,9 +45,17 @@ const Team: React.FC = () => {
 					<i className="fa-solid fa-circle-info"></i> Sobre Nós
 				</h1>
 				<h3 className="team-description-text">
-					Somos uma empresa que busca vender cafés e derivados. Em soma com
-					estes produtos, você pode se dedicar à uma boa leitura, com livros de
-					qualidade.
+					"Joy Coffee" - sua loja de café especializada! Localizada no coração
+					da cidade, a Joy Coffee é um paraíso para os amantes do café. Com um
+					ambiente acolhedor e aromas irresistíveis, a loja oferece uma
+					experiência única para todos os clientes. <br />
+					<br /> Ao entrar na Joy Coffee, você será recebido por uma equipe
+					apaixonada por café, pronta para compartilhar seu conhecimento e
+					ajudá-lo a descobrir novos sabores. O balcão de atendimento exibe uma
+					variedade de grãos cuidadosamente selecionados de diferentes regiões
+					do mundo. Desde os intensos e encorpados grãos africanos até os sutis
+					e suaves grãos sul-americanos, há algo para agradar a todos os
+					paladares.
 				</h3>
 			</div>
 		</div>
